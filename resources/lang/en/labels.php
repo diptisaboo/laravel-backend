@@ -57,6 +57,26 @@ return [
     'cancelbtn' => 'Cancel',
     'whoops' => 'Whoops!',
     'someproblems' => 'There were some problems with your input.',
-    'recordnotexist' => 'Record does not exists'
+    'recordnotexist' => 'Record does not exists',
+    'films' => 'Films',
+    'film' => 'Film',
+    'lblname' => 'Name',
+    'lbldescription' => 'Description',
+    'lblrealeasedate' => 'Realease Date',
+    'lblrating' => 'Rating',
+    'lblticketprice' => 'Ticket Price',
+    'lblcountry' => 'Country',
+    'lblgenre' => 'Genre',
+    'lblphoto' => 'Photo',
+    'lblaction' => 'Action',
+    'filmnamerequired' => 'Flm Name Required',
+    'filmdescriptionrequired' => 'Flm Description Required',
+    'filmrealeasedaterequired' => 'Flm Realease Date Required',
+    'filmratingrequired' => 'Flm Rating Required',
+    'filmticketpricerequired' => 'Flm Ticket Price Required',
+    'filmcountryrequired' => 'Flm Country Required',
+    'filmgenrerequired' => 'Flm Genre Required',
+    'filmphotorequired' => 'Flm Photo Required',
+
 ];
 

@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="{{ asset('css/skins/skin-red.min.css')}}">
         <link rel="stylesheet" href="{{ asset('css/jquery-ui.css')}}">
         <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/dataTables.bootstrap.min.css')}}">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
         @yield('header')
     </head>
@@ -95,6 +97,13 @@
                             </a>
                         </li>
                     </ul>
+                    <ul class="sidebar-menu">
+                        <li class="<?php if (Route::current()->uri() == 'films') {echo 'active';}?> treeview">
+                            <a href="{{ url('films') }}">
+                                <i class="fa fa-dashboard"></i> <span>{{trans('labels.films')}}</span>
+                            </a>
+                        </li>
+                    </ul>
                 </section>
                 <!-- /.sidebar -->
             </aside>
@@ -158,6 +167,9 @@
         <!-- backendLTE App -->
         <script src="{{ asset('js/app.min.js')}}"></script>
         <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('js/dataTables.bootstrap.min.js')}}"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         @yield('script')
     </body>
     </body>

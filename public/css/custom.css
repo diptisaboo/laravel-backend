@@ -25,3 +25,7 @@ em.invalid {
 .add-btn-primary{width: 50px; margin-bottom: 10px;}
 
 
+.image_modal{text-align: center;}
+.image_modal .modal-dialog{width:auto;margin: 35px auto 0 auto;display: inline-block;}
+.image_modal .modal-dialog .modal-body{padding:0px;}
+.image_modal button.close{position: absolute;right: 5px;font-size: 35px;top:-4px;}

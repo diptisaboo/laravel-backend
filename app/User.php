@@ -31,4 +31,22 @@ class User extends Authenticatable
     {
         return $this->belongsTo('App\Role');
     }
+
+    public function registerUserFromApi($data)
+    {
+        return User::create($data);
+    }
+    
+    public function checkEmailExist($email) 
+    {  
+        $user = User::whereIn('status', ['1', '2'])->where('email', $email)->get();
+
+        if ($user->count() > 0) 
+        {
+            return true;
+        } else 
+        {
+            return false;
+        }  
+    }
 }
